@@ -17,6 +17,7 @@ export interface HeroStat {
   icon?: string;
   value: string;
   label: string;
+  suffix?: string;
 }
 
 export interface WhyCard {
