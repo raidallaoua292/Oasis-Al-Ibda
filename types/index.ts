@@ -1,3 +1,4 @@
+import { IconBadge } from '@/components/ui/IconBadge';
 /**
  * Oasis Al-Ibda - Type Definitions
  * All TypeScript interfaces and types used across the app
@@ -11,12 +12,14 @@ export interface NavLink {
 export interface StatItem {
   value: string;
   label: string;
+  icon: string;
 }
 
 export interface HeroStat {
   icon?: string;
   value: string;
   label: string;
+  suffix?: string;
 }
 
 export interface WhyCard {
