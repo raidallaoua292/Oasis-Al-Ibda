@@ -26,8 +26,8 @@ export function ProgramsSection() {
           {programsData.map((program, index) => (
             <Card
               key={program.title}
-              variant={program.accent ? 'highlight' : 'default'}
-              className={`relative ${program.accent ? 'md:scale-105' : ''}`}
+              // variant={program.accent ? 'highlight' : 'default'}
+              className={`relative group ${program.accent ? ' border border-orange bg-orange-pale' : ' border border-green bg-green-pale'}`}
             >
               <div className="flex flex-col">
                 <div className="text-xs font-bold text-gray-500 uppercase mb-3">
@@ -41,8 +41,10 @@ export function ProgramsSection() {
                   {program.description}
                 </p>
               </div>
-              {program.accent && (
-                <div className="absolute bottom-0 right-0 w-1 h-3/5 bg-orange rounded-l-full transition-all duration-200 group-hover:h-4/5"/>
+              {program.accent ? (
+                <div className="absolute bottom-1 right-0 w-1 h-3/5 bg-orange rounded-l-full transition-all duration-200 group-hover:h-4/5" />
+              ) : (
+                <div className="absolute bottom-1 right-0 w-1 h-3/5 bg-green rounded-l-full transition-all duration-200 group-hover:h-4/5" />
               )}
             </Card>
           ))}
