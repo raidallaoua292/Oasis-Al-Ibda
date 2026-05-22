@@ -1,4 +1,3 @@
-import { IconBadge } from '@/components/ui/IconBadge';
 /**
  * Oasis Al-Ibda - Type Definitions
  * All TypeScript interfaces and types used across the app

@@ -22,7 +22,6 @@ export function OutcomesSection() {
         </div>
 
         {/* Stats Row */}
-        // ...existing code...
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           {outcomeStats.map((stat) => (
             <Card key={stat.label} variant="stat" className="text-center">
@@ -35,7 +34,7 @@ export function OutcomesSection() {
           ))}
         </div>
 
-        {/* Outcome Cards */}
+        {/* Banner */}
         <div className="bg-green rounded-3xl p-12 text-center text-white mb-8">
           <h3 className="text-2xl font-bold mb-3">
             في نهاية البرنامج، تمتلك ملفاً تكوينياً حقيقياً

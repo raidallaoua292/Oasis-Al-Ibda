@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
-
-
 @import "tailwindcss";
 
 @theme {
+  /* Brand colors */
   --color-green: #145A46;
   --color-green-light: #1a7358;
   --color-green-pale: #e8f4f0;
@@ -13,6 +11,20 @@
   --color-sand: #F6F1E8;
   --color-text: #1F2937;
   --color-muted: #6B7280;
+
+  /* Gray scale (needed for gray-* utilities used in components) */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Font */
   --font-tajawal: "Tajawal", sans-serif;
 }
 
@@ -30,5 +42,3 @@ body {
 * {
   box-sizing: border-box;
 }
-
-

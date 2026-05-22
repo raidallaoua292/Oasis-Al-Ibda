@@ -35,7 +35,7 @@ export function FounderSection() {
             {/* Quote */}
             <div className="bg-white/10 border-r-4 border-orange rounded-r-xl p-6">
               <p className="text-lg italic leading-relaxed text-white/90">
-                "{quote}"
+                &ldquo;{quote}&rdquo;
               </p>
             </div>
           </div>

@@ -1,6 +1,14 @@
 import type { Metadata, Viewport } from 'next'
+import { Tajawal } from 'next/font/google'
 import './globals.css'
 import { metadata as siteMetadata } from '@/content/oasis'
+
+const tajawal = Tajawal({
+  subsets: ['arabic'],
+  weight: ['400', '500', '700', '900'],
+  display: 'swap',
+  variable: '--font-tajawal',
+})
 
 export const metadata: Metadata = {
   title: siteMetadata.title,
@@ -29,15 +37,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html dir="rtl" lang="ar">
+    <html dir="rtl" lang="ar" className={tajawal.variable}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="font-tajawal bg-white text-text">{children}</body>
+      <body className="bg-white text-text">{children}</body>
     </html>
   )
 }

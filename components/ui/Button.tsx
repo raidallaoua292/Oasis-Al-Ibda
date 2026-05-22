@@ -16,7 +16,8 @@ export function Button({
   type = 'button',
   ...props
 }: ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-  const baseStyles = 'font-bold rounded-lg transition-all duration-200 font-tajawal cursor-pointer inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 disabled:cursor-not-allowed';
+  const baseStyles =
+    'font-bold rounded-lg transition-all duration-200 cursor-pointer inline-flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 disabled:cursor-not-allowed';
 
   const variantStyles = {
     primary:
@@ -24,7 +25,7 @@ export function Button({
     secondary:
       'bg-sand text-green border-2 border-green hover:bg-green hover:text-white disabled:opacity-50',
     ghost:
-      'bg-transparent text-white border-1.5 border-white/35 hover:bg-white/20 disabled:opacity-50',
+      'bg-transparent text-white border border-white/35 hover:bg-white/20 disabled:opacity-50',
   };
 
   const sizeStyles = {
