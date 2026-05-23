@@ -71,6 +71,7 @@ export interface FounderInfo {
   role: string;
   bio: string;
   quote: string;
+  achievements?: string[];
   image?: string;
 }
 

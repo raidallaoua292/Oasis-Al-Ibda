@@ -7,7 +7,7 @@ import { founderInfo } from '@/content/oasis';
  * Founder Section Component
  */
 export function FounderSection() {
-  const { name, role, bio, quote } = founderInfo;
+  const { name, role, bio, quote, achievements } = founderInfo;
 
   return (
     <section className="py-20 md:py-32 bg-green text-white">
@@ -31,6 +31,19 @@ export function FounderSection() {
             <h2 className="text-4xl font-black mb-3">{name}</h2>
             <p className="text-lg text-white/75 mb-6">{role}</p>
             <p className="text-lg leading-relaxed mb-8">{bio}</p>
+            {/* Achievements */}
+            <div className="text-sm text-white/50 mb-6">
+              {achievements && achievements.length > 0 && (
+                <>
+                  <strong>الإنجازات:</strong>
+                  <ul className="list-disc list-inside mt-2">
+                    {achievements.map((achievement, index) => (
+                      <li key={index}>{achievement}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
 
             {/* Quote */}
             <div className="bg-white/10 border-r-4 border-orange rounded-r-xl p-6">
